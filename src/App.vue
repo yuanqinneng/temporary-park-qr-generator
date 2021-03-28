@@ -1,12 +1,22 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
   </div>
 </template>
+
+<script>
+export default {
+  data(){
+    return{
+
+    }
+  },
+  methods: {
+  },
+  mounted() {
+  }
+}
+</script>
 
 <style lang="less">
 #app {
@@ -28,5 +38,9 @@
       color: #42b983;
     }
   }
+}
+body{
+  width: 375px;
+  margin: 0 auto;
 }
 </style>
